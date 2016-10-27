@@ -1,0 +1,59 @@
+body{
+
+    margin: 15px auto;//上下，左右
+    font-family:Arial,'MS Trebuchet',san-serif;
+    width:960px;
+}
+
+p{
+    margin:0 0 20px 0;
+}
+p, li{
+
+    line-height: 20px;
+}
+
+#page_header{ width:100%;}
+/*'>' 符号代表page_header的直接子元素才受影响*/
+#page_header > nav > ul , #page_footer > nav > ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#page_header > nav > ul >li, #page_footer nav> ul > li{
+
+    margin:0 20px 0 0;
+    padding:0;
+    display:inline;
+}
+
+#posts{
+
+    float: left;
+    width: 74%;
+}
+
+#posts aside {
+
+    float: right;
+    font-size:20px;
+    line-height:40px;
+    margin-left:5%;
+    width:35%;
+}
+
+#sidebar{
+    float: left;
+    width:25%;
+}
+
+#page_footer{
+    /*clear 属性规定元素的哪一侧不允许其他浮动元素。*/
+    clear: both;
+    display: block;
+    /*text-align 属性规定元素中的文本的水平对齐方式。*/
+    text-align: center;
+    width:100%;
+    
+}

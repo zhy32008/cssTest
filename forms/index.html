@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" action="/projects/1">
+    <!--<fieldset> 标签将表单内容的一部分打包，生成一组相关表单的字段。-->
+        <!--当一组表单元素放到 <fieldset> 标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素-->
+    <fieldset id="personal_information">
+        <legend>Project Information</legend>
+        <ol>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" autofocus>
+            </li>
+            <li>
+                <label for="priority">Priority</label>
+                <input type="range" min="0" max="10" name="priority" value="0" id="priority">
+            </li>
+            <li>
+                <label for="estimated_hours">Estimated Hours</label>
+                <input type="number" name="estimated_hours" min="0" max="1000" id="estimated_hours">
+            </li>
+            <li>
+                <label for="start_date">Start date</label>
+                <input type="date" name="start_date" id="start_date" value="2013-12-01">
+            </li>
+            <li>
+                <label for="email">Email contact</label>
+                <input type="email" name="email" id="email" placeholder="user@example.com" autocomplete="off">
+            </li>
+            <li>
+                <label for="url">Staging URL</label>
+                <input type="url" name="url" id="url">
+            </li>
+            <li>
+                <label for="project_color">Project color</label>
+                <input type="color" name="project_color" id="project_color">
+            </li>
+            <li>
+                <input type="submit" value="Submit">
+            </li>
+        </ol>
+
+    </fieldset>
+
+</form>
+</body>
+</html>
